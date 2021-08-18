@@ -15,6 +15,5 @@ In zabbix_agentd.conf file we locate the **"UserParameters"** attributes and we 
 + UserParameter=space,df -hT /home | awk 'NR == 2 {print ($4/($4+$5))*100}'
 + UserParameter=cpu,top -b -n1 | awk 'NR == 3 {print ($2)}'
 # Step 2
-In this step we sould create our specific items in all hosts in our zabbix frontend 
-A 
+In this step we sould create our 8 specific items in all hosts in our zabbix frontend 
 ![Ltee](/prima.png)
