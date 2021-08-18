@@ -1,0 +1,29 @@
+{% extends 'layout.html'%}
+{% block body %}
+
+{% for key,value in result.items() %}
+<br>
+<div class="container w-75" >
+  <table class="table table-hover w-100 " >
+
+      <tbody>
+
+        <tr>
+        <th scope="col" colspan="2" class="table-info text-center">{{key}}</th>
+
+        </tr>
+        {% for keyy,valuee in value.items() %}
+            <tr>
+            <td class="text-center bg-info ">{{ keyy }} </td>
+            <td  class="text-center table-primary">{{ valuee }}</td>
+            </tr>
+
+        {% endfor %}
+
+
+
+      </tbody>
+  </table>
+</div>
+{% endfor %}
+{% endblock %}

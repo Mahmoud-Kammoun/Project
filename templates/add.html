@@ -1,0 +1,21 @@
+
+{% extends 'layout.html'%}
+{% block body %}
+<div class="card justify-content-center mx-auto d-block border border-primary border-2 shadow p-3 mb-5 bg-body rounded " style="width:40rem;margin-top:50px">
+      <h5 class="card-header alert alert-primary fs-4 text-center">Add your Action</h5>
+      <div class="card-body">
+        <form method="post" action="{{ url_for('handle_data') }}">
+                <div>
+
+                    <div class="mb-3">
+                      <input id="name" name="name"  type="text" class="form-control shadow-sm p-3 mb-5 bg-body rounded"  placeholder="NAME"/>
+                    </div>
+                    <div class="mb-3" >
+                          <input type="text" name="script" class="form-control shadow-sm p-3 mb-5 bg-body rounded" id="script" placeholder="SCRIPT"/>
+                    </div>
+                </div>
+        <button type="submit" class="btn btn-outline-primary btn-lg mx-auto d-block " style="margin-left:140px;">ADD ACTION</button>
+        </form>
+      </div>
+</div>
+{% endblock %}

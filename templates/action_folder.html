@@ -1,0 +1,30 @@
+{% extends 'layout.html'%}
+{% block body %}
+<table class="table table-hover table-bordered border-primary">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center">Subfolder</th>
+      <th scope="col"  class="text-center">Size</th>
+    </tr>
+  </thead>
+  <tbody>
+
+{% for key,value in res.items() %}
+    <tr>
+      <th scope="col" colspan="2" class="table-info text-center">{{ key }}</th>
+
+    </tr>
+{% for key2,value2 in value.items() %}
+
+    <tr>
+      <td >{{ key2 }} </td>
+      <td  class="text-center">{{ value2 }}</td>
+    </tr>
+  {% endfor %}
+
+{% endfor %}
+
+  </tbody>
+</table>
+
+{% endblock %}

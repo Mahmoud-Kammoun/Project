@@ -1,0 +1,25 @@
+{% extends 'layout.html'%}
+{% block body %}
+<div class="card-body">
+        <form method="post" action="{{ url_for('handle_dat') }}">
+                <div>
+                    <div class="mb-3" >
+                      <input id="id" name="id" type="text" value="{{id}}" readonly class="form-control shadow-sm p-3 mb-5 bg-body rounded"  placeholder="{{id}}" />
+                    </div>
+                    <div class="mb-3">
+                      <input id="name" name="name"  type="text" class="form-control shadow-sm p-3 mb-5 bg-body rounded"  placeholder="{{name}}"/>
+                    </div>
+                    <div class="mb-3" >
+                          <input type="text" name="script" class="form-control shadow-sm p-3 mb-5 bg-body rounded" id="script" placeholder="{{script}}"/>
+                    </div>
+                </div>
+        <button type="submit" onclick="return confirm('you want to update your action')" class="btn btn-outline-primary btn-lg mx-auto d-block " style="margin-left:140px;"> Update</button>
+        </form>
+      </div>
+<p></p>
+<p></p>
+<p></p>
+
+
+
+{% endblock %}

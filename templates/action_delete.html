@@ -1,0 +1,9 @@
+{% extends 'layout.html'%}
+{% block body %}
+{% for key,value in dict.items() %}
+  <div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Your folder "{{result}}" is deleted from "{{value}}" Server</p>
+  </div>
+{% endfor %}
+{% endblock %}

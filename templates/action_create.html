@@ -1,0 +1,9 @@
+{% extends 'layout.html'%}
+{% block body %}
+{% for key,value in dict.items() %}
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p> Your folder "{{result}}" is created in "{{value}}" Server </p>
+  </div>
+{% endfor %}
+{% endblock %}
