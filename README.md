@@ -16,4 +16,5 @@ In zabbix_agentd.conf file we locate the **"UserParameters"** attributes and we 
 + UserParameter=cpu,top -b -n1 | awk 'NR == 3 {print ($2)}'
 # Step 2
 In this step we sould create our specific items in all hosts in our zabbix frontend 
-A ![Légende](url vers l'image)
+A 
+![Ltee](/prima.png)
